@@ -320,15 +320,42 @@
   <div class="divider"><svg viewBox="0 0 24 24"><path d="M12 21s-8-5-8-12a4 4 0 0 1 8-1 4 4 0 0 1 8 1c0 7-8 12-8 12z"/></svg></div>
   <h2>Спасибо тебе за…</h2>
   <div class="thanks-grid">
-    <div class="thanks-card"><span class="icon">📄</span><div class="title">Документы</div><div class="desc">спасибо что вы с всем этим разобираетесь,я не знаю как это было непросто</div></div>
+    <div class="thanks-card"><span class="icon">📄</span><div class="title">Документы</div><div class="desc">спасибо что вы со всем этим разобрались, я знаю как это было непросто</div></div>
     <div class="thanks-card"><span class="icon">🏙️</span><div class="title">Переезд в Белград</div><div class="desc">теперь это мой любимый город, несмотря ни на что</div></div>
-    <div class="thanks-card"><span class="icon">🤝</span><div class="title">Друзья и знакомы, которые тут появились</div><div class="desc">и Войкан, и остальные, которые точно настоящие друзбя</div></div>
-    <div class="thanks-card"><span class="icon">🎓</span><div class="title">Школу</div><div class="desc">благодаря тебе и папе мы учимся в правда хорошей школе</div></div>
-    <div class="thanks-card"><span class="icon">🙃</span><div class="title">Терпение</div><div class="desc">я знаю что мы с Мишей гаденыши, но спасибо что терпите нас</div></div>
+    <div class="thanks-card"><span class="icon">🤝</span><div class="title">Друзей и знакомые, которые тут появились</div><div class="desc">и Войкан, и остальные, которые точно настоящие друзья</div></div>
+    <div class="thanks-card"><span class="icon">🎓</span><div class="title">Школу</div><div class="desc">благодаря тебе и папе мы учимся в правда хорошей и пристижной школе</div></div>
+    <div class="thanks-card"><span class="icon">🙃</span><div class="title">Терпение</div><div class="desc">я знаю что мы с Мишей раздолбаи, но спасибо что терпите</div></div>
+    <div class="thanks-card"><span class="icon">🎉</span><div class="title">Мой день рождения</div><div class="desc">что вы, папа, Миша и Вероника были рядом</div></div>
   </div>
 </section>
 
 <section class="gallery reveal">
+  <div class="divider"><svg viewBox="0 0 24 24"><path d="M12 21s-8-5-8-12a4 4 0 0 1 8-1 4 4 0 0 1 8 1c0 7-8 12-8 12z"/></svg></div>
+  <h2>Моменты, которые хочется сохранить</h2>
+  <p class="hint">здесь могут быть ваши фотографии — просто замени блоки ниже</p>
+  <div class="photo-grid">
+    <figure class="polaroid"><div class="photo-slot">📷</div><figcaption>вставь подпись</figcaption></figure>
+    <figure class="polaroid"><div class="photo-slot">📷</div><figcaption>вставь подпись</figcaption></figure>
+    <figure class="polaroid"><div class="photo-slot">📷</div><figcaption>вставь подпись</figcaption></figure>
+    <figure class="polaroid"><div class="photo-slot">📷</div><figcaption>вставь подпись</figcaption></figure>
+  </div>
+</section>
+
+<section class="closing reveal">
+  <div class="divider"><svg viewBox="0 0 24 24"><path d="M12 21s-8-5-8-12a4 4 0 0 1 8-1 4 4 0 0 1 8 1c0 7-8 12-8 12z"/></svg></div>
+  <p>Эти два последних года были непростые, но у нас всё получается — и дальше получится, я уверен.<br>Спасибо тебе, мама, за всё 🙏</p>
+  <div class="sign">С любовью, Рома</div>
+  <div class="sub-sign">для самой лучшей мамы</div>
+</section>
+
+<footer>сделано с любовью 🌿</footer>
+
+<script>
+  const observer = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{ if(e.isIntersecting) e.target.classList.add('show'); });
+  },{threshold:0.15});
+  document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+</script>
 
 </body>
 </html>
